@@ -27,6 +27,10 @@
 			2,
 			"unix"
 		],
+		"lines-between-class-members": [
+			2,
+			"always"
+		],
 		"no-magic-numbers": 1,
 		"no-trailing-spaces": 2,
 		"no-unused-vars": 2,
