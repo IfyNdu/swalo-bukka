@@ -1,26 +1,25 @@
-const HtmlWebPackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const devMode = process.env.NODE_ENV !== 'production'
+const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
 
   module: {
-    
     rules: [
       {
-        test: /\.js$/,
         exclude: /node_modules/,
+        test: /\.js$/,
         use: [
-          "babel-loader",
-          "eslint-loader",
+          'babel-loader',
+          'eslint-loader',
         ],
       },
       {
         test: /\.html$/,
         use: [
           {
-            loader: "html-loader"
+            loader: 'html-loader'
           }
         ]
       },
@@ -30,26 +29,26 @@ module.exports = {
 
           devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: {
               camelCase: true,
-              modules: true,
               importLoaders: 1,
-              localIdentName: "[name]_[local]_[hash:base64]",
-              sourceMap: true,
-              minimize: true
+              localIdentName: '[name]_[local]_[hash:base64]',
+              minimize: true,
+              modules: true,
+              sourceMap: true
             }
           },
           {
-            loader: "postcss-loader",
+            loader: 'postcss-loader',
             options: {
               plugins: [
-                require("autoprefixer")
+                require('autoprefixer')
               ]
             }
           },
           {
-            loader: "sass-loader"
+            loader: 'sass-loader'
           }
         ]
       }
@@ -57,12 +56,12 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./src/index.html",
-      filename: "./index.html"
+      filename: './index.html',
+      template: './src/index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: devMode ? '[name].css' : '[name].[hash].css',
       chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
+      filename: devMode ? '[name].css' : '[name].[hash].css'
     })
   ]
 };

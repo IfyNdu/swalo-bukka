@@ -7,7 +7,6 @@ module.exports = merge(common, {
   devServer: {
     port: 6969,
     stats: {
-      
       children: false
     }
   },
