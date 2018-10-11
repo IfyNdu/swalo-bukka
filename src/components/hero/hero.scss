@@ -1,0 +1,58 @@
+@import '../../styles/mixins.scss';
+
+
+.root {
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  
+  @include desktop {
+
+    align-items: flex-start
+  }
+}
+
+.title-wrapper {
+
+  position: relative;
+  
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.description-wrapper {
+  
+  position: relative;
+  padding: 1rem;
+  
+}
+
+.title {
+  
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.description {
+  
+  width: 60%;
+  margin: 1rem auto;
+
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.5;
+
+
+  
+  @include desktop {
+    
+    width: 100%;
+  }
+  
+}

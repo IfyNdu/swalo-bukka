@@ -1,0 +1,25 @@
+@import '../../styles/mixins.scss';
+
+
+.root {
+
+  padding: 1rem;
+  width: 100%;
+}
+
+.pic {
+  
+  position: relative;
+  
+  margin-left: auto;
+  margin-right: auto;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+
+
+  @include tablet {
+    
+    background-size: cover;
+  }
+}

@@ -1,0 +1,17 @@
+.root {
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 4;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  border: 1px dashed black;
+}
+
+.count { font-size: 2rem; }

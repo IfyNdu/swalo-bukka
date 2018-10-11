@@ -1,0 +1,14 @@
+.container {
+
+  z-index: 5;
+
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  transform: translateX(-50%);
+}

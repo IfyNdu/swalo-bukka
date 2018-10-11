@@ -1,0 +1,60 @@
+@import '../../../styles/mixins.scss';
+
+
+.root {
+
+  position: relative;
+  
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+
+  padding: 1rem;
+
+  @include tablet {
+    
+    align-items: center;
+  }
+
+}
+
+.header {
+  
+  margin: 0 0 1rem 0;
+  width: 100%;
+
+  text-transform: uppercase;
+
+  @include tablet {
+    
+    text-align: center;
+  }
+}
+
+
+.text {
+
+  
+
+  letter-spacing: 0.2em;
+  line-height: 1;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+
+  &.action {
+ 
+    margin-bottom: 1rem;
+    padding: 0 0 0.3em 0;
+
+    border-bottom: 1px solid black;
+    cursor: pointer;
+
+  }
+  
+
+  @include tablet {
+
+    display: block;
+    text-align: center;
+  }
+}

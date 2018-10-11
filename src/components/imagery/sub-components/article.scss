@@ -1,0 +1,28 @@
+@import '../../../styles/variables.scss';
+
+.container {
+
+  position: absolute;
+  z-index: 0;
+
+  width: 100%;
+
+  background-color: transparent;
+  transition: opacity 1.2s ease;
+
+  opacity: 0;
+
+  &.current { 
+    z-index: 1;
+    opacity: 1.0; 
+  }
+}
+
+.imageContainer {
+  
+  width: 100%;
+
+  transition: transform 0.3s linear;
+
+  &:hover { cursor: pointer; }
+}

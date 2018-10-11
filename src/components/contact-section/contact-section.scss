@@ -1,0 +1,50 @@
+.root {
+
+  display: flex;
+  flex-flow: column wrap;
+  border: none;
+  padding: 1rem;
+
+  border-bottom: 0.5px solid gray;
+}
+
+.text {
+
+  padding: 0.5rem;
+  margin: 0.8rem 0;
+
+  border: 1px solid black;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+
+
+  &.text-area { 
+    
+    height: 205px;
+
+    text-align: left;
+  }
+}
+
+.submit {
+
+  margin: 0 auto 1rem auto;
+  padding: 0.8rem 2rem;
+
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: white;
+  background: linear-gradient(45deg, lighten(blue, 20%), lighten(#094540, 20%), lighten(yellow, 20%));
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-size: 400% 400%;
+
+  &:hover { animation: gradient 4s ease-in-out infinite; }
+}
+
+@keyframes gradient {
+
+  50% { background-position: 100% 0; }
+}

@@ -1,5 +1,23 @@
-.root {
+@import '../../styles/mixins.scss';
 
-  font-size: 5rem;
-  text-shadow: 2px 2px 4px coral;
+
+.sections {
+
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  max-width: 1200px;;
+  margin: auto;
+
+  @include desktop {
+    
+    margin: 0;
+    max-width: 98%;
+  }
+
+
+  @include tablet {
+    
+    flex-flow: column wrap;
+  }
 }

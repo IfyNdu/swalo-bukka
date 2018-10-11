@@ -1,0 +1,1 @@
+export { default as Site_Data } from './static-data/static-data';

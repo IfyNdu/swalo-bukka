@@ -1,0 +1,11 @@
+.dot {
+
+  width: 6px;
+  height: 6px;
+  margin: 0.5rem;
+
+  border-radius: 3px;
+  background-color: lightgray;
+
+  &.selected { background-color: black; }
+}
