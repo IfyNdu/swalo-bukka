@@ -14,15 +14,17 @@ const SectionImage = ({ height, url, width }) => {
   };
 
   return (
+
     <div className={styles.root}>
       <div className={styles.pic} style={style}>
         <OverlayContent count={5} />
       </div>
-    </div>
+    </div >
   );
 };
 
 SectionImage.propTypes = {
+  appear: PropTypes.bool,
   height: PropTypes.string,
   url: PropTypes.string,
   width: PropTypes.string

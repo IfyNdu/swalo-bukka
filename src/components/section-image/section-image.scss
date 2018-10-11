@@ -5,6 +5,8 @@
 
   padding: 1rem;
   width: 100%;
+
+  overflow: hidden;
 }
 
 .pic {
@@ -15,11 +17,27 @@
   margin-right: auto;
 
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  
+  transition: box-shadow 300ms linear;
 
+  &:hover { 
+    
+    box-shadow: -1px 1px 8px black;
+  }
 
   @include tablet {
     
     background-size: cover;
+    
   }
+}
+
+.entering {
+
+  opacity: 0.1;
+}
+.entered {
+
+  transition: opacity 500ms linear 500ms;
 }

@@ -4,7 +4,6 @@ import OverlayContent from '../overlay-content/overlay-content';
 
 import styles from './section-text.scss';
 
-
 const SectionText = ({ header, padding, paddingEdge, paragraphs, width }) => {
 
   const style = { width };

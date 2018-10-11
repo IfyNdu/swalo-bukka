@@ -1,11 +1,12 @@
+@import '../../styles/mixins.scss';
+
+
 .root {
 
   display: flex;
   flex-flow: column wrap;
   border: none;
   padding: 1rem;
-
-  border-bottom: 0.5px solid gray;
 }
 
 .text {
@@ -24,8 +25,14 @@
     
     height: 205px;
 
-    text-align: left;
+    @include tablet { height: 280px; }
   }
+
+  @include desktop {
+    
+    padding: 0.8rem;
+  }
+
 }
 
 .submit {

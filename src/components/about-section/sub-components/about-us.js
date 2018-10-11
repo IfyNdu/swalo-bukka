@@ -1,10 +1,18 @@
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { FaFacebook, FaInstagram, FaPhone, FaTwitter } from 'react-icons/fa';
 import OverlayContent from '../../overlay-content/overlay-content';
 
 import styles from './about-us.scss';
 
+
+const icons = {
+  facebook: <FaFacebook className={styles.icon} />,
+  instagram: <FaInstagram className={styles.icon} />,
+  phone: <FaPhone className={styles.icon} />,
+  twitter: <FaTwitter className={styles.icon} />
+};
 
 const AboutUs = ({ actions, handleClick, header, paragraphs, width }) => {
 
@@ -31,17 +39,15 @@ const AboutUs = ({ actions, handleClick, header, paragraphs, width }) => {
       }
       {
         actions && (
-          actions.map(({ title, url }, index) => {
+          actions.map(({ key, title, url }, index) => {
 
             return (
-              <React.Fragment key={`about-us--${index}`}>
-                <p key={index} {...{
-                  className: classnames(styles.text, styles.action),
-                  onClick: e => handleClick(url, e)
-                }}>
-                  {title}
-                </p><br />
-              </React.Fragment>
+              <p key={index} {...{
+                className: classnames(styles.text, styles.action),
+                onClick: e => handleClick(url, e)
+              }}>
+                {icons[key]}{title}
+              </p>
             );
           })
         )

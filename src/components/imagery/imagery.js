@@ -5,7 +5,7 @@ import OverlayContent from '../overlay-content/overlay-content';
 
 import styles from './imagery.scss';
 
-const ss = 2000;
+const interval = 2000;
 
 class Carousel extends Component {
 
@@ -18,21 +18,27 @@ class Carousel extends Component {
       articles: [],
       currentIndex: 0,
     };
+
+    this.timer = null;
   }
 
   componentDidMount() {
 
     this.setState(this.props);
 
-    setInterval(() => {
+    this.timer = setInterval(this.changeRamdomSlide, interval);
+  }
 
-      this.handleClick(Math.floor(Math.random() * Math.floor(this.props.articles.length)));
-    }, ss);
+  changeRamdomSlide = () => {
+
+    this.handleClick(Math.floor(Math.random() * Math.floor(this.props.articles.length)));
   }
 
   onClickHandler = (_, currentIndex) => {
 
+    clearTimeout(this.timer);
     this.handleClick(currentIndex);
+    this.timer = setInterval(this.changeRamdomSlide, interval);
   }
 
   handleClick(currentIndex) {

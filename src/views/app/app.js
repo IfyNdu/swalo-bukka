@@ -7,6 +7,7 @@ import {
   Floater,
   Hero,
   Imagery,
+  MapContainer,
   SectionColumn,
   SectionImage,
   SectionText
@@ -18,6 +19,7 @@ import styles from './app.scss';
 class App extends React.Component {
 
   render() {
+
     return (
       <React.Fragment>
         <Banner />
@@ -79,6 +81,10 @@ class App extends React.Component {
           </SectionColumn>
           <SectionColumn>
             <ContactSection />
+            <MapContainer {...{
+              initialCenter: Site_Data.map.initialCenter,
+              name: Site_Data.title
+            }} />
           </SectionColumn>
         </div>
       </React.Fragment>

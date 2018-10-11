@@ -23,7 +23,8 @@ const ContactSection = () => {
               }} />
               : <textarea key={key} {...{
                 className: classnames(styles.text, styles.textArea),
-                name
+                name,
+                placeholder
               }} />;
           })
         )

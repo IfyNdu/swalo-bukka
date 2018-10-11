@@ -21,12 +21,16 @@
 
   z-index: 1;
 
-  font-size: 4rem;
+  padding: 1rem;
+
+  border: 5px solid wheat;
+  font-size: 5rem;
   letter-spacing: 8px;
   color: white;
 
   @include desktop {
     
+    border-width: 2px;
     font-size: 2rem;
     text-align: center;
   }

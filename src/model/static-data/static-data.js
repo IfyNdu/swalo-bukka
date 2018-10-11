@@ -1,11 +1,6 @@
 export default {
 
   about_us: [{
-    actions: [{
-      key: 'view_map',
-      title: 'VIEW MAP',
-      url: 'https://www.instagram.com/swalobukka/'
-    }],
     header: 'OPENING HOURS',
     paragraphs: [
       'MON – SUN',
@@ -20,7 +15,8 @@ export default {
       'Opposite Ocean Centre',
       '900104 Abuja',
       'Nigeria',
-      '+234 818 107 8580'
+      '+234 818 107 8580',
+      '+234 806 396 8664'
     ],
     width: '100%'
   }, {
@@ -66,6 +62,7 @@ export default {
       input: 'textarea',
       key: 'message',
       name: 'message',
+      placeholder: 'Message',
       type: 'textarea'
     }
   ],
@@ -83,6 +80,12 @@ export default {
       left: '1rem',
       top: '1rem',
       width: '100px'
+    }
+  },
+  map: {
+    initialCenter: {
+      lat: 9.00417,
+      lng: 7.46609
     }
   },
   section1: {
