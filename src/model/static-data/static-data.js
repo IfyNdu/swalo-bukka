@@ -14,7 +14,12 @@ export default {
       '112 Oladipo Diya Road',
       'Opposite Ocean Centre',
       '900104 Abuja',
-      'Nigeria',
+      'Nigeria'
+    ],
+    width: '100%'
+  }, {
+    header: 'CALL US',
+    paragraphs: [
       '+234 818 107 8580',
       '+234 806 396 8664'
     ],
@@ -74,19 +79,27 @@ export default {
       width: '100px'
     }
   },
+
+  hero: {
+
+    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+  },
   logo_floater: {
     bounds: {
       height: '200px',
       left: '1rem',
       top: '1rem',
       width: '100px'
-    }
+    },
+    url: 'https://s3-eu-west-1.amazonaws.com/swalo-buka/img/logo.jpeg'
   },
   map: {
+    height: '300px',
     initialCenter: {
       lat: 9.00417,
       lng: 7.46609
-    }
+    },
+    zoom: 16
   },
   section1: {
     articles: [
@@ -101,7 +114,7 @@ export default {
     padding: '2rem',
     paddingEdge: 'paddingTop',
     paragraphs: [
-      'The Shizuku kitchen team serves innovative dishes with a traditional touch. Solo diners can take advantage of ramen lunch deals, groups can book ahead and feast on Izakaya-style sharing dishes (try the karaage popcorn chicken), and we can organise everything from Japanese gyoza to ramen burgers for private functions.'
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     ]
   },
   section2: {
@@ -113,9 +126,8 @@ export default {
     padding: '2rem',
     paddingEdge: 'paddingBottom',
     paragraphs: [
-      'Flavour comes first, whether we’re talking about our traditional ramen stock that takes a whole day to make or the unique brews we import from all over Asia. Not sure which beer, sake or umeshu matches your food? Just ask.',
-      'The Shizuku kitchen team serves innovative dishes with a traditional touch. Solo diners can take advantage of ramen lunch deals, groups can book ahead and feast on Izakaya-style sharing dishes (try the karaage popcorn chicken), and we can organise everything from Japanese gyoza to ramen burgers for private functions.',
-      'And if you’re wondering what’s in a name, Shizuku is Japanese for ‘droplets’. It’s because we care about every drop of ramen and each drop of craft beer that hits your belly. So next time you’re in Victoria Street, Melbourne’s Vietnamese precinct, don’t settle for anything less than the best Japanese in town.'
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra diam sit amet nisl suscipit adipiscing bibendum est. Ornare arcu odio ut sem nulla pharetra diam sit. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue. Odio eu feugiat pretium nibh ipsum consequat nisl. Pharetra pharetra massa massa ultricies mi quis. Placerat orci nulla pellentesque dignissim. Dui faucibus in ornare quam viverra orci.',
+      'Vitae et leo duis ut diam quam nulla porttitor massa. Consequat nisl vel pretium lectus quam. Suscipit adipiscing bibendum est ultricies integer. Elementum integer enim neque volutpat ac tincidunt vitae. Senectus et netus et malesuada fames ac turpis egestas integer. Nec nam aliquam sem et tortor consequat id. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a.'
     ],
   },
   title: 'SWALO BUKKA'

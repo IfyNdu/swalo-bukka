@@ -27,7 +27,7 @@ class App extends React.Component {
           {...Site_Data.logo_floater} />
         <Floater
           {...Site_Data.hamburger_floater} />
-        <Hero />
+        <Hero {...Site_Data.hero} />
         <div className={styles.sections}>
           <SectionColumn>
             <Imagery {...{
@@ -40,7 +40,6 @@ class App extends React.Component {
               padding: Site_Data.section1.padding,
               paddingEdge: Site_Data.section1.paddingEdge,
               paragraphs: Site_Data.section1.paragraphs,
-              width: '100%'
             }} />
             <SectionImage {...{
               height: '461px',
@@ -57,8 +56,7 @@ class App extends React.Component {
             <SectionText {...{
               padding: Site_Data.section2.padding,
               paddingEdge: Site_Data.section2.paddingEdge,
-              paragraphs: Site_Data.section2.paragraphs,
-              width: '100%'
+              paragraphs: Site_Data.section2.paragraphs
             }} />
             <SectionImage {...{
               height: '479px',
@@ -82,8 +80,10 @@ class App extends React.Component {
           <SectionColumn>
             <ContactSection />
             <MapContainer {...{
+              height: Site_Data.map.height,
               initialCenter: Site_Data.map.initialCenter,
-              name: Site_Data.title
+              name: Site_Data.title,
+              zoom: Site_Data.map.zooom
             }} />
           </SectionColumn>
         </div>

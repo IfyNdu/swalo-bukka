@@ -8,29 +8,17 @@
   align-items: center;
   max-width: 1200px;
   margin: auto;
-  
+
   @include desktop {
 
     align-items: flex-start
   }
 }
 
-.title-wrapper {
-
-  position: relative;
-  
-  padding: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
+.title-wrapper { padding: 1rem; }
 
 
-.description-wrapper {
-  
-  position: relative;
-  padding: 1rem;
-  
-}
+.description-wrapper { padding: 1rem; }
 
 .title {
   

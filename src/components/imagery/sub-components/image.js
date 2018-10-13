@@ -2,10 +2,10 @@ import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import styles from './article.scss';
+import styles from './image.scss';
 
 
-const Article = ({
+const Image = ({
   currentIndex,
   index,
   url,
@@ -35,10 +35,10 @@ const Article = ({
   );
 };
 
-Article.propTypes = {
+Image.propTypes = {
   currentIndex: PropTypes.number,
   index: PropTypes.number,
   url: PropTypes.string
 };
 
-export default Article;
+export default Image;

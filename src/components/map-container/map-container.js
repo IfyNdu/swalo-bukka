@@ -1,15 +1,18 @@
+import { google_api_key } from 'config';
 import { InfoWindow, Map, Marker, GoogleApiWrapper } from 'google-maps-react';
+import PropTypes from 'prop-types';
 import React from 'react';
+
 
 const coords = {
   lat: 9.00417,
   lng: 7.46609
 };
 
-
 export class MapContainer extends React.Component {
 
   constructor(props) {
+
     super(props);
 
     this.state = {
@@ -41,21 +44,20 @@ export class MapContainer extends React.Component {
 
   render() {
 
-    const { activeMarker, showingInfoWindow, selectedPlace } = this.state;
-    const { google, initialCenter, name } = this.props;
+    const { activeMarker, selectedPlace, showingInfoWindow } = this.state;
+    const { height, google, initialCenter, name, zoom } = this.props;
 
     return (
       <div style={{ padding: '1rem' }}>
         <Map {...{
           containerStyle: {
-            height: '300px',
-            position: 'relative',
-            width: '100%'
+            height,
+            position: 'relative'
           },
           google,
           initialCenter,
           onClick: this.onMapClicked,
-          zoom: 16
+          zoom
         }}>
           <Marker {...{
             name,
@@ -75,6 +77,16 @@ export class MapContainer extends React.Component {
   }
 }
 
+MapContainer.propTypes = {
+  height: PropTypes.string,
+  initialCenter: PropTypes.shape({
+    lat: PropTypes.number,
+    lng: PropTypes.number
+  }),
+  name: PropTypes.string,
+  zoom: PropTypes.number
+};
+
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyCthJadV5TLAeYuhEipy2_fKeFfXl0Z-I0'
+  apiKey: google_api_key
 })(MapContainer);

@@ -1,15 +1,17 @@
-import React, { Component } from 'react';
-import Article from './sub-components/article';
+import PropTypes from 'prop-types';
+import React from 'react';
+import Image from './sub-components/image';
 import Footer from './sub-components/footer';
-import OverlayContent from '../overlay-content/overlay-content';
 
 import styles from './imagery.scss';
 
-const interval = 2000;
 
-class Carousel extends Component {
+const interval = 3000;
+
+class Carousel extends React.Component {
 
   constructor(props) {
+
     super(props);
 
     this.state = {
@@ -43,22 +45,18 @@ class Carousel extends Component {
 
   handleClick(currentIndex) {
 
-    const stateValues = {
-
+    this.setState({
       animateCurrIndex: currentIndex,
       currentIndex
-    };
-
-    this.setState(stateValues);
+    });
   }
-
 
   renderSlides = () => this.state.articles.map(({ url }, i) => {
 
     const { currentIndex, height } = this.state;
 
     return (
-      <Article key={`article--${i}`} {...{
+      <Image key={`image--${i}`} {...{
         currentIndex,
         height,
         index: i,
@@ -71,16 +69,10 @@ class Carousel extends Component {
 
     const { articles, currentIndex, height, width } = this.state;
     const { onClickHandler, renderSlides } = this;
-    const style = {
-      height,
-      width
-    };
+    const style = { height, width };
 
     return (
-      <div {...{
-        className: styles.container,
-        // style
-      }}>
+      <div className={styles.container}>
         <div {...{
           className: styles.carousel,
           style
@@ -92,11 +84,15 @@ class Carousel extends Component {
           currentIndex,
           onClickHandler
         }} />
-        <OverlayContent count={2} />
       </div>
     );
   }
-
 }
+
+Carousel.propTypes = {
+  articles: PropTypes.array,
+  height: PropTypes.string,
+  width: PropTypes.string
+};
 
 export default Carousel;

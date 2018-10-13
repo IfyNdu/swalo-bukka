@@ -2,7 +2,6 @@ import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { FaFacebook, FaInstagram, FaPhone, FaTwitter } from 'react-icons/fa';
-import OverlayContent from '../../overlay-content/overlay-content';
 
 import styles from './about-us.scss';
 
@@ -52,7 +51,6 @@ const AboutUs = ({ actions, handleClick, header, paragraphs, width }) => {
           })
         )
       }
-      <OverlayContent count={1} />
     </div>
   );
 };

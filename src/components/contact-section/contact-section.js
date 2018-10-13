@@ -1,7 +1,6 @@
 import classnames from 'classnames';
 import { Site_Data } from 'model';
 import React from 'react';
-import OverlayContent from '../overlay-content/overlay-content';
 
 import styles from './contact-section.scss';
 
@@ -30,7 +29,6 @@ const ContactSection = () => {
         )
       }
       <button className={styles.submit}>SUBMIT</button>
-      <OverlayContent count={1} />
     </form>
   );
 };

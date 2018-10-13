@@ -28,16 +28,12 @@
     @include tablet { height: 280px; }
   }
 
-  @include desktop {
-    
-    padding: 0.8rem;
-  }
-
+  @include desktop { padding: 0.8rem; }
 }
 
 .submit {
 
-  margin: 0 auto 1rem auto;
+  margin-top: 1rem;
   padding: 0.8rem 2rem;
 
   text-transform: uppercase;

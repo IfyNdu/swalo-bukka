@@ -46,13 +46,9 @@
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
-    "google-map-react": "^1.0.9",
     "google-maps-react": "^2.0.2",
-    "intersection-observer": "^0.5.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-icons": "^3.1.0",
-    "react-intersection-observer": "^6.2.3",
-    "react-transition-group": "^2.5.0"
+    "react-icons": "^3.1.0"
   }
 }

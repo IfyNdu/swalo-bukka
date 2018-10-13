@@ -9,14 +9,12 @@ const Dot = ({ currentIndex, index, onClickHandler }) => {
 
   return (
 
-    <div className={styles.container}>
-      <div {...{
-        className: classnames(styles.dot, {
-          [styles.selected]: currentIndex === index
-        }),
-        onClick: e => onClickHandler(e, index)
-      }} />
-    </div>
+    <div {...{
+      className: classnames(styles.dot, {
+        [styles.selected]: currentIndex === index
+      }),
+      onClick: e => onClickHandler(e, index)
+    }} />
   );
 };
 

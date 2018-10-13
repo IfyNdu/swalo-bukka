@@ -16,8 +16,5 @@
   }
 
 
-  @include tablet {
-    
-    flex-flow: column wrap;
-  }
+  @include tablet { flex-flow: column wrap; }
 }

@@ -1,17 +1,9 @@
 @import '../../styles/mixins.scss';
 
 
-.root {
-
-  padding: 1rem;
-  width: 100%;
-
-  overflow: hidden;
-}
+.root { padding: 1rem; }
 
 .pic {
-  
-  position: relative;
   
   margin-left: auto;
   margin-right: auto;
@@ -21,23 +13,7 @@
   
   transition: box-shadow 300ms linear;
 
-  &:hover { 
-    
-    box-shadow: -1px 1px 8px black;
-  }
+  &:hover { box-shadow: -1px 1px 8px black; }
 
-  @include tablet {
-    
-    background-size: cover;
-    
-  }
-}
-
-.entering {
-
-  opacity: 0.1;
-}
-.entered {
-
-  transition: opacity 500ms linear 500ms;
+  @include tablet { background-size: cover; }
 }
