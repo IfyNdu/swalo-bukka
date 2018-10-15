@@ -43,7 +43,7 @@ class App extends React.Component {
             }} />
             <SectionImage {...{
               height: '461px',
-              url: 'http://shizuku.com.au/img/ramen.gif',
+              url: 'https://media.giphy.com/media/Yab54vTDJk89y/giphy.gif',
               width: '90%'
             }} />
             <SectionImage {...{

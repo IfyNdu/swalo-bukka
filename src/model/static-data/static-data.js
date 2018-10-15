@@ -2,6 +2,7 @@ export default {
 
   about_us: [{
     header: 'OPENING HOURS',
+    id: 'opening_hours',
     paragraphs: [
       'MON – SUN',
       '11.30AM – 2.30PM',
@@ -10,6 +11,7 @@ export default {
     width: '100%'
   }, {
     header: 'VISIT US',
+    id: 'visit_us',
     paragraphs: [
       '112 Oladipo Diya Road',
       'Opposite Ocean Centre',
@@ -19,6 +21,7 @@ export default {
     width: '100%'
   }, {
     header: 'CALL US',
+    id: 'call_us',
     paragraphs: [
       '+234 818 107 8580',
       '+234 806 396 8664'
@@ -103,12 +106,11 @@ export default {
   },
   section1: {
     articles: [
-      { url: 'http://shizuku.com.au/img/gallery1/1.jpg' },
-      { url: 'http://shizuku.com.au/img/gallery1/2.jpg' },
-      { url: 'http://shizuku.com.au/img/gallery1/3.jpg' },
-      { url: 'http://shizuku.com.au/img/gallery1/4.jpg' },
-      { url: 'http://shizuku.com.au/img/gallery1/5.jpg' },
-      { url: 'http://shizuku.com.au/img/gallery1/6.jpg' }
+      { url: 'https://s3-eu-west-1.amazonaws.com/swalo-buka/img/carousel/asian-chopsticks-cuisine-670702.jpg' },
+      { url: 'https://s3-eu-west-1.amazonaws.com/swalo-buka/img/carousel/bread-breakfast-burger-1108117.jpg' },
+      { url: 'https://s3-eu-west-1.amazonaws.com/swalo-buka/img/carousel/bread-breakfast-delicious-704569.jpg' },
+      { url: 'https://s3-eu-west-1.amazonaws.com/swalo-buka/img/carousel/cook-crush-grind-51384.jpg' },
+      { url: 'https://s3-eu-west-1.amazonaws.com/swalo-buka/img/carousel/cooking-food-ginger-256318.jpg' }
     ],
     header: 'Functions',
     padding: '2rem',
@@ -119,9 +121,9 @@ export default {
   },
   section2: {
     articles: [
-      { url: 'http://shizuku.com.au/img/gallery2/3.jpg' },
-      { url: 'http://shizuku.com.au/img/gallery2/1.jpg' },
-      { url: 'http://shizuku.com.au/img/gallery2/2.jpg' }
+      { url: 'https://s3-eu-west-1.amazonaws.com/swalo-buka/img/carousel/cuisine-delicious-food-784634.jpg' },
+      { url: 'https://s3-eu-west-1.amazonaws.com/swalo-buka/img/carousel/food-food-photography-meal-769290.jpg' },
+      { url: 'https://s3-eu-west-1.amazonaws.com/swalo-buka/img/carousel/pexels-photo-670702.jpeg' }
     ],
     padding: '2rem',
     paddingEdge: 'paddingBottom',

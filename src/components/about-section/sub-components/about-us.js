@@ -7,13 +7,19 @@ import styles from './about-us.scss';
 
 
 const icons = {
+  call_us: <FaPhone className={styles.icon} />,
   facebook: <FaFacebook className={styles.icon} />,
   instagram: <FaInstagram className={styles.icon} />,
-  phone: <FaPhone className={styles.icon} />,
   twitter: <FaTwitter className={styles.icon} />
 };
 
-const AboutUs = ({ actions, handleClick, header, paragraphs, width }) => {
+const AboutUs = ({
+  actions,
+  handleClick,
+  header,
+  id,
+  paragraphs,
+  width }) => {
 
   const style = { width };
 
@@ -30,7 +36,7 @@ const AboutUs = ({ actions, handleClick, header, paragraphs, width }) => {
                 key: index,
                 style
               }} >
-                {paragraph}
+                {icons[id]}{paragraph}
               </p>
             );
           })
@@ -59,6 +65,7 @@ AboutUs.propTypes = {
   actions: PropTypes.array,
   handleClick: PropTypes.func,
   header: PropTypes.string,
+  id: PropTypes.string,
   paragraphs: PropTypes.array,
   width: PropTypes.string
 };

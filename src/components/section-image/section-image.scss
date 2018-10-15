@@ -13,7 +13,7 @@
   
   transition: box-shadow 300ms linear;
 
-  &:hover { box-shadow: -1px 1px 8px black; }
+  &:hover { box-shadow: 0 24px 95px 0 rgba(38,50,56,0.33)}
 
   @include tablet { background-size: cover; }
 }
